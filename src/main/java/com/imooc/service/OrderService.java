@@ -14,7 +14,7 @@ public interface OrderService {
     //query
     OrderDTO findOne(String orderId);
 
-    //query all
+    //query all by buyerid
     Page<OrderDTO> findList(String buyerId, Pageable pageable);
 
     //cancel order
@@ -25,4 +25,8 @@ public interface OrderService {
 
     //pay order
     OrderDTO paid(OrderDTO orderDTO);
+
+    //query all
+    Page<OrderDTO> findList(Pageable pageable);
+
 }
