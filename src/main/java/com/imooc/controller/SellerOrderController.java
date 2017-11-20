@@ -29,6 +29,8 @@ public class SellerOrderController {
         PageRequest request = new PageRequest(page-1,size);
         Page<OrderDTO> orderDTOPage = orderService.findList(request);
         map.put("orderDTOPage",orderDTOPage);
+        map.put("currentPage",page);
+        map.put("currentSize",size);
         //System.out.println(orderDTOPage.getTotalElements());
         return new ModelAndView("order/list",map);
 }
