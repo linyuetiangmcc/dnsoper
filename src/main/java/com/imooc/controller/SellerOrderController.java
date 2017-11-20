@@ -23,12 +23,13 @@ public class SellerOrderController {
     @Autowired private OrderService orderService;
 
     @GetMapping("/list")
-    public ModelAndView list(@RequestParam("page") Integer page,
-                             @RequestParam("size") Integer size,
+    public ModelAndView list(@RequestParam(value = "page",defaultValue = "1") Integer page,
+                             @RequestParam(value = "size",defaultValue = "10") Integer size,
                              Map<String,Object> map){
         PageRequest request = new PageRequest(page-1,size);
         Page<OrderDTO> orderDTOPage = orderService.findList(request);
         map.put("orderDTOPage",orderDTOPage);
+        //System.out.println(orderDTOPage.getTotalElements());
         return new ModelAndView("order/list",map);
-    }
+}
 }

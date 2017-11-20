@@ -37,4 +37,8 @@ public class OrderDTO {
     private Date updateTime;
 
     private List<OrderDetail> orderDetailList;
+
+    public OrderStatusEnum getOrderStatusEnum(){
+        return EnumUtil.getBycode(orderStatus,OrderStatusEnum.class);
+    }
 }
