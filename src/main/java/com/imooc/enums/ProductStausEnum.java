@@ -3,7 +3,7 @@ package com.imooc.enums;
 import lombok.Getter;
 
 @Getter
-public enum ProductStausEnum {
+public enum ProductStausEnum implements CodeEnum{
     UP(0,"在架"),
     DOWN(1,"下架")
     ;
