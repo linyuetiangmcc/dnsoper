@@ -18,7 +18,9 @@ public enum ResultEnum {
     ORDER_OWNER_ERROR(19,"该订单不属于当前用户"),
     ORDER_CANCEL_SUCCESS(22,"订单取消成功"),
     ORDER_FINISH_SUCCESS(23,"订单完结成功"),
-    PRODUCT_STATUS_ERROR(24,"商品状态不正确")
+    PRODUCT_STATUS_ERROR(24,"商品状态不正确"),
+    LOGIN_FAIL(25,"登录失败，登录信息不正确"),
+    LOGOUT_SUCCESS(26,"登出成功"),
     ;
 
 
