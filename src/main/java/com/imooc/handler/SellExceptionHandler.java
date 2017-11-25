@@ -7,10 +7,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 @ControllerAdvice
 public class SellExceptionHandler {
-
     @ExceptionHandler(value = SellerAuthorizeException.class)
     public ModelAndView handlerAuthorizeException(){
-
-
+        return new ModelAndView("redirect:/seller/login");
     }
 }
