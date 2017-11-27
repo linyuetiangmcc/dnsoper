@@ -15,4 +15,9 @@ public class SellerServiceImpl implements SellerService {
     public SellerInfo findSellerInfoBySellerId(String sellerId) {
         return repository.findBySellerId(sellerId);
     }
+
+    @Override
+    public SellerInfo findSellerInfoByUsername(String username) {
+        return repository.findByUsername(username);
+    }
 }

@@ -5,4 +5,6 @@ import com.imooc.dataobject.SellerInfo;
 public interface SellerService {
 
     SellerInfo findSellerInfoBySellerId(String sellerId);
+
+    SellerInfo findSellerInfoByUsername(String username);
 }
