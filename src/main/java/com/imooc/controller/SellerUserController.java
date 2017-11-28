@@ -38,8 +38,8 @@ public class SellerUserController {
 
 
 
-    @PostMapping("/login")
-    public ModelAndView login(@Valid SellerInfoForm form,
+    @PostMapping("/loginAction")
+    public ModelAndView loginAction(@Valid SellerInfoForm form,
                               BindingResult bindingResult,
                               Map<String,Object> map,
                               HttpServletResponse response){
@@ -89,6 +89,11 @@ public class SellerUserController {
         return new ModelAndView("redirect:/seller/order/list");*/
     }
 
+    @GetMapping("/login")
+    public String login(){
+        return "seller/login";
+    }
+
     @GetMapping("/logout")
     public ModelAndView logout(HttpServletRequest request,
                        HttpServletResponse response,
@@ -101,7 +106,7 @@ public class SellerUserController {
         }
 
         map.put("msg",ResultEnum.LOGOUT_SUCCESS);
-        map.put("url","/sell/seller/order/list");
+        map.put("url","/sell/seller/login");
         return new ModelAndView("common/success",map);
     }
 }

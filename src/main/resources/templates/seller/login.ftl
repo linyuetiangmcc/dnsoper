@@ -10,7 +10,7 @@
 <div class="container">
     <div class="row clearfix">
         <div class="col-md-4 column">
-            <form role="form" title="登录信息" method="post" action="/sell/seller/login">
+            <form role="form" title="登录信息" method="post" action="/sell/seller/loginAction">
                 <div class="form-group">
                     <label>用户名</label><input type="text" class="form-control" name="username"/>
                 </div>
