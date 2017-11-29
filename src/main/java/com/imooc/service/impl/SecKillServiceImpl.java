@@ -12,8 +12,8 @@ import java.util.Map;
 @Service
 public class SecKillServiceImpl implements SecKillService {
 
-    /*@Autowired
-    private RedisLock redisLock;*/
+    @Autowired
+    private RedisLock redisLock;
 
 
     private static final int TIMOUT = 10000;
@@ -52,7 +52,7 @@ public class SecKillServiceImpl implements SecKillService {
      *
      * @param productId
      */
-    /*@Override
+    @Override
     public void orderProductMockDiffUser(String productId) {
         long time = System.currentTimeMillis() + TIMOUT;
         if (!redisLock.lock(productId, String.valueOf(time))) {
@@ -76,11 +76,11 @@ public class SecKillServiceImpl implements SecKillService {
         }
 
         redisLock.unlock(productId, String.valueOf(time));
-    }*/
+    }
 
 
-    @Override
-    public  void  orderProductMockDiffUser(String productId) {
+    /*@Override
+    public synchronized void  orderProductMockDiffUser(String productId) {
         int stockNum = stock.get(productId);
         if (stockNum == 0) {
             //库存不足
@@ -97,5 +97,5 @@ public class SecKillServiceImpl implements SecKillService {
             stock.put(productId, stockNum);
         }
 
-    }
+    }*/
 }
