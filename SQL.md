@@ -71,5 +71,10 @@ create table `seller_info` (
     primary key (`id`)
 ) comment '卖家信息表';
 
+
+https://jira.spring.io/browse/SPR-12109
+
+https://stackoverflow.com/questions/25390100/using-java-api-for-websocket-jsr-356-with-spring-boot/25425384#25425384
+
 ```
 
