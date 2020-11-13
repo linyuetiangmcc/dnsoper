@@ -2,31 +2,37 @@
     <ul class="nav sidebar-nav">
         <li class="sidebar-brand">
             <a href="#">
-                卖家管理系统
+                DNS Oper
             </a>
         </li>
-        <li>
-            <a href="/sell/seller/order/list"><i class="fa fa-fw fa-list-alt"></i>订单</a>
-        </li>
         <li class="dropdown open">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-fw fa-plus"></i> 商品 <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-fw fa-plus"></i> 业务状态 <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-                <li class="dropdown-header">操作</li>
-                <li><a href="/sell/seller/product/list">列表</a></li>
-                <li><a href="/sell/seller/product/index">新增</a></li>
+                <li class="dropdown-header">查看</li>
+                <li><a href="/sell/seller/product/list">SGW业务状态</a></li>
+                <li><a href="/sell/seller/product/list">PGW业务状态</a></li>
             </ul>
         </li>
         <li class="dropdown open">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-fw fa-plus"></i> 类目 <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-fw fa-plus"></i> 隔离业务 <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-                <li class="dropdown-header">操作</li>
-                <li><a href="/sell/seller/category/list">列表</a></li>
-                <li><a href="/sell/seller/category/index">新增</a></li>
+                <li class="dropdown-header">隔离</li>
+                <li><a href="/sell/seller/category/list">SGW隔离</a></li>
+                <li><a href="/sell/seller/category/index">PGW隔离</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown open">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-fw fa-plus"></i> 回割业务 <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">回割</li>
+                <li><a href="/sell/seller/category/list">SGW回隔</a></li>
+                <li><a href="/sell/seller/category/index">PGW回隔</a></li>
             </ul>
         </li>
 
         <li>
-            <a href="/sell/seller/logout"><i class="fa fa-fw fa-list-alt"></i> 登出</a>
+            <a href="/dns/user/logout"><i class="fa fa-fw fa-list-alt"></i> 登出</a>
         </li>
     </ul>
 </nav>
