@@ -8,8 +8,8 @@
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row clearfix">
-                <div class="col-md-12 column">
-                    请选择操作！！！
+                <div class="container">
+                    请选择操作！！
                 </div>
             </div>
         </div>

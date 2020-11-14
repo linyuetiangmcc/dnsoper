@@ -30,12 +30,8 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-
     @Autowired
     private StringRedisTemplate redisTemplate;
-
-
-
     @PostMapping("/loginAction")
     public ModelAndView loginAction(@Valid UserInfoForm form,
                               BindingResult bindingResult,
@@ -60,11 +56,9 @@ public class UserController {
 
         String token = UUID.randomUUID().toString();
         Integer expire = RedisConstant.EXPIRE;
-
-        redisTemplate.opsForValue().set(String.format(RedisConstant.TOKEN_PREFIX,token), userinfo.getUserId(),expire, TimeUnit.SECONDS);
-
+        redisTemplate.opsForValue().set(String.format(RedisConstant.TOKEN_PREFIX,token), userinfo.getUserId(),
+                expire, TimeUnit.SECONDS);
         CookieUtil.set(response, CookieConstant.TOKEN,token,expire);
-
         return new ModelAndView("redirect:/main/index");
     }
 

@@ -9,8 +9,8 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-fw fa-plus"></i> 业务状态 <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">查看</li>
-                <li><a href="/sell/seller/product/list">SGW业务状态</a></li>
-                <li><a href="/sell/seller/product/list">PGW业务状态</a></li>
+                <li><a href="/dns/sgw/check">SGW业务状态</a></li>
+                <li><a href="/dns/pwg/check">PGW业务状态</a></li>
             </ul>
         </li>
         <li class="dropdown open">
@@ -23,7 +23,7 @@
         </li>
 
         <li class="dropdown open">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-fw fa-plus"></i> 回割业务 <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-fw fa-plus"></i> 回割业务 <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">回割</li>
                 <li><a href="/sell/seller/category/list">SGW回隔</a></li>
