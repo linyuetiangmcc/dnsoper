@@ -2,7 +2,7 @@ package gmcc.hxs.service;
 
 import gmcc.hxs.dataobject.Userinfo;
 
-public interface UserService {
+public interface UserInfoService {
 
     Userinfo findUserInfoByUserId(String userId);
 

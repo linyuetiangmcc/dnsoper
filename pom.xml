@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.imooc</groupId>
-	<artifactId>sell</artifactId>
+	<groupId>gmcc.hxs</groupId>
+	<artifactId>dns</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>sell</name>
-	<description>Demo project for sell</description>
+	<name>dns</name>
+	<description>Demo project for dns</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -53,8 +53,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.47</version>
 		</dependency>
 
 		<dependency>
@@ -79,8 +80,16 @@
 		</dependency>
 
 
-
-
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.4.4</version>
+		</dependency>
 	</dependencies>
 
 	<build>

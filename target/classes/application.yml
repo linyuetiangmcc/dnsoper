@@ -9,6 +9,7 @@ spring:
     hibernate:
       naming:
         strategy: org.springframework.boot.orm.jpa.hibernate.SpringNamingStrategy
+      ddl-auto: update
   jackson:
     default-property-inclusion: non_null
 server:
@@ -16,6 +17,9 @@ server:
 logging:
   level:
     com.imooc.dataobject.mapper: trace
+gmcc:
+  hxs:
+    dnsip: 192.168.1.2
 #mybatis:
 #  mapper-locations: classpath:mapper/*.xml
 #logging:

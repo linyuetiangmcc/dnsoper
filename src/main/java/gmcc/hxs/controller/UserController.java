@@ -5,7 +5,7 @@ import gmcc.hxs.constant.RedisConstant;
 import gmcc.hxs.dataobject.Userinfo;
 import gmcc.hxs.enums.ResultEnum;
 import gmcc.hxs.form.UserInfoForm;
-import gmcc.hxs.service.UserService;
+import gmcc.hxs.service.UserInfoService;
 import gmcc.hxs.utils.CookieUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -29,7 +29,7 @@ import java.util.concurrent.TimeUnit;
 public class UserController {
 
     @Autowired
-    private UserService userService;
+    private UserInfoService userInfoService;
     @Autowired
     private StringRedisTemplate redisTemplate;
     @PostMapping("/loginAction")
@@ -42,7 +42,7 @@ public class UserController {
             return new ModelAndView("user/login",map);
         }
 
-        Userinfo userinfo = userService.findUserInfoByUsername(form.getUsername());
+        Userinfo userinfo = userInfoService.findUserInfoByUsername(form.getUsername());
         if(userinfo == null){
             map.put("msg","用户不存在");
             return new ModelAndView("user/login",map);
