@@ -6,14 +6,22 @@
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row clearfix">
-                <select id="city" class="selectpicker" onchange="selectcityChange()">
-                    <option value="">选择城市</option>
-                </select>
-                <select id="sgw" class="selectpicker">
-                    <option value="">选择sgw</option>
-                </select>
-                <button type="button" class="btn btn-default btn-primary" onclick="querySgwStatus()">查询</button>
-                <button type="button" class="btn btn-default btn-primary" onclick="huigeA()">回割</button>
+                <div class="col-md-8 column">
+                    <span class="label label-primary">请选择SAEGW所在城市：</span>
+                    <select id="city" class="selectpicker" onchange="selectcityChange()">
+                        <option value="">选择城市</option>
+                    </select>
+                    <span class="label label-primary">请选择SAEGW：</span>
+                    <select id="sgw" class="selectpicker">
+                        <option value="">选择sgw</option>
+                    </select>
+                </div>
+                <div class="col-md-2 column">
+                    <button type="button" class="btn btn-default btn-primary" onclick="querySgwStatus()">查询</button>
+                </div>
+                <div class="col-md-2 column">
+                    <button type="button" class="btn btn-default btn-danger" onclick="huigeA()">回割</button>
+                </div>
             </div>
 
             <div class="row clearfix">
@@ -109,18 +117,20 @@
     }
 
     function huigeA() {
-        var sgw = $("#sgw").val();
-        $.ajax({
-            type: "post",
-            url: "/dns/a/gelihuige?disable=false&sgw=" + sgw,
-            contentType: 'application/json;charset=UTF-8',
-            data: JSON.stringify(geliBody),
-            success: function (data) {
-                alert("共回割了" + data.length + "条A记录！请重新查询记录状态确认结果！");
-            }
-        })
+        var res = confirm("确认进行回割操作么？");
+        if(res){
+            var sgw = $("#sgw").val();
+            $.ajax({
+                type: "post",
+                url: "/dns/a/gelihuige?disable=false&sgw=" + sgw,
+                contentType: 'application/json;charset=UTF-8',
+                data: JSON.stringify(geliBody),
+                success: function (data) {
+                    alert("共回割了" + data.length + "条A记录！请重新查询记录状态确认结果！");
+                }
+            })
+        }
     }
-
 </script>
 </body>
 </html>

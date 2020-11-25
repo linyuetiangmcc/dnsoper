@@ -1184,3 +1184,367 @@ java.lang.NullPointerException: null
 2020-11-25 13:48:52.397  INFO 2604 --- [http-nio-8080-exec-1] gmcc.hxs.controller.AController          : 用户1将gzsaegw1203ber的A记录设置为false操作写日志入库成功！！
 2020-11-25 13:54:07.913  INFO 2604 --- [http-nio-8080-exec-9] gmcc.hxs.controller.AController          : 用户1将gzsaegw1203ber的A记录设置为false操作写日志入库成功！！
 2020-11-25 13:54:36.942  INFO 2604 --- [http-nio-8080-exec-5] gmcc.hxs.controller.AController          : 用户1将gzsaegw1201ber的A记录设置为false操作写日志入库成功！！
+2020-11-25 14:28:28.465  INFO 15720 --- [main] gmcc.hxs.DnsApplication                  : Starting DnsApplication on DESKTOP-CDPGRR2 with PID 15720 (D:\code\java\sprintboot\dnsoper\target\classes started by Administrator in D:\code\java\sprintboot\dnsoper)
+2020-11-25 14:28:28.467  INFO 15720 --- [main] gmcc.hxs.DnsApplication                  : No active profile set, falling back to default profiles: default
+2020-11-25 14:28:28.513  INFO 15720 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Nov 25 14:28:28 CST 2020]; root of context hierarchy
+2020-11-25 14:28:29.095  WARN 15720 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.imooc.dataobject.mapper]' package. Please check your configuration.
+2020-11-25 14:28:29.286  WARN 15720 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[gmcc.hxs]' package. Please check your configuration.
+2020-11-25 14:28:29.320  INFO 15720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 14:28:29.497  INFO 15720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 14:28:29.598  INFO 15720 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.CommentCityRepository.
+2020-11-25 14:28:29.600  INFO 15720 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.UserInfoRepository.
+2020-11-25 14:28:29.601  INFO 15720 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.OpLogRepository.
+2020-11-25 14:28:30.355  INFO 15720 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-11-25 14:28:30.363  INFO 15720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-25 14:28:30.365  INFO 15720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2020-11-25 14:28:30.557  INFO 15720 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring embedded WebApplicationContext
+2020-11-25 14:28:30.557  INFO 15720 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2044 ms
+2020-11-25 14:28:30.708  INFO 15720 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-25 14:28:30.712  INFO 15720 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-25 14:28:30.713  INFO 15720 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-25 14:28:30.714  INFO 15720 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-25 14:28:30.714  INFO 15720 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-25 14:28:31.220  INFO 15720 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-11-25 14:28:31.228  INFO 15720 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-11-25 14:28:31.268  INFO 15720 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-11-25 14:28:31.268  INFO 15720 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-11-25 14:28:31.269  INFO 15720 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-11-25 14:28:31.295  INFO 15720 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-11-25 14:28:31.472  INFO 15720 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-11-25 14:28:31.713  INFO 15720 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-11-25 14:28:31.779  INFO 15720 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-25 14:28:32.286  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Nov 25 14:28:28 CST 2020]; root of context hierarchy
+2020-11-25 14:28:32.330  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.check()
+2020-11-25 14:28:32.331  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.ARecord> gmcc.hxs.controller.AController.status(java.lang.String)
+2020-11-25 14:28:32.332  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.huige()
+2020-11-25 14:28:32.332  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.geli()
+2020-11-25 14:28:32.332  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.AController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.ARecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 14:28:32.332  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/main/index],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.MainController.index()
+2020-11-25 14:28:32.333  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.check()
+2020-11-25 14:28:32.334  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.NaptrRecord> gmcc.hxs.controller.NaptrController.status(java.lang.String)
+2020-11-25 14:28:32.334  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.huige()
+2020-11-25 14:28:32.334  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.geli()
+2020-11-25 14:28:32.334  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.NaptrController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.NaptrRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 14:28:32.335  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/citys]}" onto public java.util.ArrayList<java.lang.String> gmcc.hxs.controller.PublicController.getAllCity()
+2020-11-25 14:28:32.335  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/sgw]}" onto public java.util.ArrayList<gmcc.hxs.dataobject.CommentCity> gmcc.hxs.controller.PublicController.getSgwByCity(java.lang.String)
+2020-11-25 14:28:32.336  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.check()
+2020-11-25 14:28:32.336  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.SrvRecord> gmcc.hxs.controller.SrvController.status(java.lang.String)
+2020-11-25 14:28:32.336  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.huige()
+2020-11-25 14:28:32.337  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.geli()
+2020-11-25 14:28:32.337  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.SrvController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.SrvRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 14:28:32.338  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginAction],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.loginAction(gmcc.hxs.form.UserInfoForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-11-25 14:28:32.338  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.UserController.login()
+2020-11-25 14:28:32.338  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-11-25 14:28:32.339  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-25 14:28:32.339  INFO 15720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-25 14:28:32.361  INFO 15720 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 14:28:32.362  INFO 15720 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 14:28:32.374  INFO 15720 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in userExceptionHandler
+2020-11-25 14:28:32.389  INFO 15720 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 14:28:32.639  INFO 15720 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-11-25 14:28:32.787  INFO 15720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-11-25 14:28:32.822  INFO 15720 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-11-25 14:28:32.825  INFO 15720 --- [main] gmcc.hxs.DnsApplication                  : Started DnsApplication in 4.633 seconds (JVM running for 5.54)
+2020-11-25 14:28:39.248  INFO 15720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-11-25 14:28:39.248  INFO 15720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-25 14:28:39.270  INFO 15720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2020-11-25 14:28:39.320  INFO 15720 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-11-25 14:29:01.963  INFO 15720 --- [http-nio-8080-exec-10] gmcc.hxs.controller.NaptrController      : 用户1将gzsaegw1201ber的Naptr记录设置为true操作写日志入库成功！！
+2020-11-25 14:31:22.960  INFO 2160 --- [main] gmcc.hxs.DnsApplication                  : Starting DnsApplication on DESKTOP-CDPGRR2 with PID 2160 (D:\code\java\sprintboot\dnsoper\target\classes started by Administrator in D:\code\java\sprintboot\dnsoper)
+2020-11-25 14:31:22.963  INFO 2160 --- [main] gmcc.hxs.DnsApplication                  : No active profile set, falling back to default profiles: default
+2020-11-25 14:31:23.015  INFO 2160 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Nov 25 14:31:23 CST 2020]; root of context hierarchy
+2020-11-25 14:31:23.557  WARN 2160 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.imooc.dataobject.mapper]' package. Please check your configuration.
+2020-11-25 14:31:23.763  WARN 2160 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[gmcc.hxs]' package. Please check your configuration.
+2020-11-25 14:31:23.797  INFO 2160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 14:31:23.898  INFO 2160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 14:31:23.964  INFO 2160 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.CommentCityRepository.
+2020-11-25 14:31:23.966  INFO 2160 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.UserInfoRepository.
+2020-11-25 14:31:23.967  INFO 2160 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.OpLogRepository.
+2020-11-25 14:31:24.769  INFO 2160 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-11-25 14:31:24.776  INFO 2160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-25 14:31:24.777  INFO 2160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2020-11-25 14:31:24.945  INFO 2160 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring embedded WebApplicationContext
+2020-11-25 14:31:24.945  INFO 2160 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1930 ms
+2020-11-25 14:31:25.096  INFO 2160 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-25 14:31:25.099  INFO 2160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-25 14:31:25.100  INFO 2160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-25 14:31:25.100  INFO 2160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-25 14:31:25.100  INFO 2160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-25 14:31:25.631  INFO 2160 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-11-25 14:31:25.640  INFO 2160 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-11-25 14:31:25.680  INFO 2160 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-11-25 14:31:25.681  INFO 2160 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-11-25 14:31:25.682  INFO 2160 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-11-25 14:31:25.708  INFO 2160 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-11-25 14:31:25.869  INFO 2160 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-11-25 14:31:26.092  INFO 2160 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-11-25 14:31:26.155  INFO 2160 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-25 14:31:26.715  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Nov 25 14:31:23 CST 2020]; root of context hierarchy
+2020-11-25 14:31:26.764  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.check()
+2020-11-25 14:31:26.767  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.ARecord> gmcc.hxs.controller.AController.status(java.lang.String)
+2020-11-25 14:31:26.767  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.AController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.ARecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 14:31:26.768  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.huige()
+2020-11-25 14:31:26.768  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.geli()
+2020-11-25 14:31:26.768  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/main/index],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.MainController.index()
+2020-11-25 14:31:26.770  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.check()
+2020-11-25 14:31:26.771  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.NaptrRecord> gmcc.hxs.controller.NaptrController.status(java.lang.String)
+2020-11-25 14:31:26.771  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.NaptrController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.NaptrRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 14:31:26.771  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.huige()
+2020-11-25 14:31:26.771  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.geli()
+2020-11-25 14:31:26.772  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/sgw]}" onto public java.util.ArrayList<gmcc.hxs.dataobject.CommentCity> gmcc.hxs.controller.PublicController.getSgwByCity(java.lang.String)
+2020-11-25 14:31:26.772  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/citys]}" onto public java.util.ArrayList<java.lang.String> gmcc.hxs.controller.PublicController.getAllCity()
+2020-11-25 14:31:26.773  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.check()
+2020-11-25 14:31:26.773  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.SrvRecord> gmcc.hxs.controller.SrvController.status(java.lang.String)
+2020-11-25 14:31:26.774  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.SrvController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.SrvRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 14:31:26.774  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.huige()
+2020-11-25 14:31:26.774  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.geli()
+2020-11-25 14:31:26.775  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.UserController.login()
+2020-11-25 14:31:26.775  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginAction],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.loginAction(gmcc.hxs.form.UserInfoForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-11-25 14:31:26.775  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-11-25 14:31:26.776  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-25 14:31:26.777  INFO 2160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-25 14:31:26.800  INFO 2160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 14:31:26.800  INFO 2160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 14:31:26.813  INFO 2160 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in userExceptionHandler
+2020-11-25 14:31:26.827  INFO 2160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 14:31:27.066  INFO 2160 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-11-25 14:31:27.203  INFO 2160 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-11-25 14:31:27.238  INFO 2160 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-11-25 14:31:27.241  INFO 2160 --- [main] gmcc.hxs.DnsApplication                  : Started DnsApplication in 4.499 seconds (JVM running for 5.32)
+2020-11-25 14:31:31.808  INFO 2160 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-11-25 14:31:31.809  INFO 2160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-25 14:31:31.829  INFO 2160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2020-11-25 14:31:31.881  INFO 2160 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-11-25 14:31:43.259  INFO 2160 --- [http-nio-8080-exec-4] gmcc.hxs.controller.NaptrController      : 用户1将gzsaegw1201ber的Naptr记录设置为true操作写日志入库成功！！
+2020-11-25 14:31:50.295  INFO 2160 --- [http-nio-8080-exec-9] gmcc.hxs.controller.NaptrController      : 用户1将gzsaegw1201ber的Naptr记录设置为true操作写日志入库成功！！
+2020-11-25 14:32:32.433  INFO 2160 --- [http-nio-8080-exec-1] gmcc.hxs.controller.NaptrController      : 用户1将gzsaegw1201ber的Naptr记录设置为true操作写日志入库成功！！
+2020-11-25 14:32:44.215  INFO 2160 --- [http-nio-8080-exec-6] gmcc.hxs.controller.NaptrController      : 用户1将gzsaegw1201ber的Naptr记录设置为true操作写日志入库成功！！
+2020-11-25 14:34:47.452  INFO 5816 --- [main] gmcc.hxs.DnsApplication                  : Starting DnsApplication on DESKTOP-CDPGRR2 with PID 5816 (D:\code\java\sprintboot\dnsoper\target\classes started by Administrator in D:\code\java\sprintboot\dnsoper)
+2020-11-25 14:34:47.454  INFO 5816 --- [main] gmcc.hxs.DnsApplication                  : No active profile set, falling back to default profiles: default
+2020-11-25 14:34:47.496  INFO 5816 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Nov 25 14:34:47 CST 2020]; root of context hierarchy
+2020-11-25 14:34:48.005  WARN 5816 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.imooc.dataobject.mapper]' package. Please check your configuration.
+2020-11-25 14:34:48.161  WARN 5816 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[gmcc.hxs]' package. Please check your configuration.
+2020-11-25 14:34:48.188  INFO 5816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 14:34:48.267  INFO 5816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 14:34:48.312  INFO 5816 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.CommentCityRepository.
+2020-11-25 14:34:48.313  INFO 5816 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.UserInfoRepository.
+2020-11-25 14:34:48.314  INFO 5816 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.OpLogRepository.
+2020-11-25 14:34:48.999  INFO 5816 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-11-25 14:34:49.005  INFO 5816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-25 14:34:49.005  INFO 5816 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2020-11-25 14:34:49.157  INFO 5816 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring embedded WebApplicationContext
+2020-11-25 14:34:49.157  INFO 5816 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1661 ms
+2020-11-25 14:34:49.280  INFO 5816 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-25 14:34:49.283  INFO 5816 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-25 14:34:49.283  INFO 5816 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-25 14:34:49.284  INFO 5816 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-25 14:34:49.284  INFO 5816 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-25 14:34:49.666  INFO 5816 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-11-25 14:34:49.675  INFO 5816 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-11-25 14:34:49.717  INFO 5816 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-11-25 14:34:49.718  INFO 5816 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-11-25 14:34:49.719  INFO 5816 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-11-25 14:34:49.743  INFO 5816 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-11-25 14:34:49.899  INFO 5816 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-11-25 14:34:50.125  INFO 5816 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-11-25 14:34:50.190  INFO 5816 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-25 14:34:50.698  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Nov 25 14:34:47 CST 2020]; root of context hierarchy
+2020-11-25 14:34:50.742  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.check()
+2020-11-25 14:34:50.744  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.ARecord> gmcc.hxs.controller.AController.status(java.lang.String)
+2020-11-25 14:34:50.745  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.huige()
+2020-11-25 14:34:50.745  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.AController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.ARecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 14:34:50.745  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.geli()
+2020-11-25 14:34:50.745  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/main/index],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.MainController.index()
+2020-11-25 14:34:50.747  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.check()
+2020-11-25 14:34:50.747  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.NaptrRecord> gmcc.hxs.controller.NaptrController.status(java.lang.String)
+2020-11-25 14:34:50.747  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.huige()
+2020-11-25 14:34:50.747  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.NaptrController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.NaptrRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 14:34:50.747  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.geli()
+2020-11-25 14:34:50.748  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/sgw]}" onto public java.util.ArrayList<gmcc.hxs.dataobject.CommentCity> gmcc.hxs.controller.PublicController.getSgwByCity(java.lang.String)
+2020-11-25 14:34:50.748  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/citys]}" onto public java.util.ArrayList<java.lang.String> gmcc.hxs.controller.PublicController.getAllCity()
+2020-11-25 14:34:50.749  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.check()
+2020-11-25 14:34:50.749  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.SrvRecord> gmcc.hxs.controller.SrvController.status(java.lang.String)
+2020-11-25 14:34:50.749  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.huige()
+2020-11-25 14:34:50.750  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.SrvController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.SrvRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 14:34:50.750  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.geli()
+2020-11-25 14:34:50.751  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-11-25 14:34:50.751  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginAction],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.loginAction(gmcc.hxs.form.UserInfoForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-11-25 14:34:50.751  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.UserController.login()
+2020-11-25 14:34:50.752  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-25 14:34:50.752  INFO 5816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-25 14:34:50.774  INFO 5816 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 14:34:50.774  INFO 5816 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 14:34:50.786  INFO 5816 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in userExceptionHandler
+2020-11-25 14:34:50.800  INFO 5816 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 14:34:51.049  INFO 5816 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-11-25 14:34:51.185  INFO 5816 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-11-25 14:34:51.218  INFO 5816 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-11-25 14:34:51.221  INFO 5816 --- [main] gmcc.hxs.DnsApplication                  : Started DnsApplication in 3.998 seconds (JVM running for 4.768)
+2020-11-25 14:35:02.785  INFO 5816 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-11-25 14:35:02.785  INFO 5816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-25 14:35:02.804  INFO 5816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2020-11-25 14:35:02.852  INFO 5816 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-11-25 14:35:23.456  INFO 5816 --- [http-nio-8080-exec-7] gmcc.hxs.controller.NaptrController      : 用户1将gzsaegw1201ber的Naptr记录设置为false操作写日志入库成功！！
+2020-11-25 14:35:48.401  INFO 5816 --- [http-nio-8080-exec-4] gmcc.hxs.controller.SrvController        : 用户1将gzsaegw1203ber的Srv记录设置为true操作写日志入库成功！！
+2020-11-25 14:36:02.199  INFO 5816 --- [http-nio-8080-exec-9] gmcc.hxs.controller.SrvController        : 用户1将gzsaegw1203ber的Srv记录设置为false操作写日志入库成功！！
+2020-11-25 14:36:13.951  INFO 5816 --- [http-nio-8080-exec-6] gmcc.hxs.controller.SrvController        : 用户1将gzsaegw1203ber的Srv记录设置为false操作写日志入库成功！！
+2020-11-25 14:36:45.052  INFO 15460 --- [main] gmcc.hxs.DnsApplication                  : Starting DnsApplication on DESKTOP-CDPGRR2 with PID 15460 (D:\code\java\sprintboot\dnsoper\target\classes started by Administrator in D:\code\java\sprintboot\dnsoper)
+2020-11-25 14:36:45.056  INFO 15460 --- [main] gmcc.hxs.DnsApplication                  : No active profile set, falling back to default profiles: default
+2020-11-25 14:36:45.101  INFO 15460 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Nov 25 14:36:45 CST 2020]; root of context hierarchy
+2020-11-25 14:36:45.638  WARN 15460 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.imooc.dataobject.mapper]' package. Please check your configuration.
+2020-11-25 14:36:45.798  WARN 15460 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[gmcc.hxs]' package. Please check your configuration.
+2020-11-25 14:36:45.825  INFO 15460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 14:36:45.903  INFO 15460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 14:36:45.948  INFO 15460 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.CommentCityRepository.
+2020-11-25 14:36:45.949  INFO 15460 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.UserInfoRepository.
+2020-11-25 14:36:45.949  INFO 15460 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.OpLogRepository.
+2020-11-25 14:36:46.633  INFO 15460 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-11-25 14:36:46.639  INFO 15460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-25 14:36:46.640  INFO 15460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2020-11-25 14:36:46.780  INFO 15460 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring embedded WebApplicationContext
+2020-11-25 14:36:46.780  INFO 15460 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1679 ms
+2020-11-25 14:36:46.902  INFO 15460 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-25 14:36:46.911  INFO 15460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-25 14:36:46.912  INFO 15460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-25 14:36:46.912  INFO 15460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-25 14:36:46.912  INFO 15460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-25 14:36:47.295  INFO 15460 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-11-25 14:36:47.303  INFO 15460 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-11-25 14:36:47.343  INFO 15460 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-11-25 14:36:47.344  INFO 15460 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-11-25 14:36:47.344  INFO 15460 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-11-25 14:36:47.370  INFO 15460 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-11-25 14:36:47.528  INFO 15460 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-11-25 14:36:47.779  INFO 15460 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-11-25 14:36:47.849  INFO 15460 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-25 14:36:48.416  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Nov 25 14:36:45 CST 2020]; root of context hierarchy
+2020-11-25 14:36:48.462  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.check()
+2020-11-25 14:36:48.463  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.ARecord> gmcc.hxs.controller.AController.status(java.lang.String)
+2020-11-25 14:36:48.464  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.huige()
+2020-11-25 14:36:48.464  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.geli()
+2020-11-25 14:36:48.464  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.AController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.ARecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 14:36:48.465  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/main/index],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.MainController.index()
+2020-11-25 14:36:48.467  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.check()
+2020-11-25 14:36:48.467  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.NaptrRecord> gmcc.hxs.controller.NaptrController.status(java.lang.String)
+2020-11-25 14:36:48.468  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.huige()
+2020-11-25 14:36:48.468  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.geli()
+2020-11-25 14:36:48.468  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.NaptrController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.NaptrRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 14:36:48.469  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/sgw]}" onto public java.util.ArrayList<gmcc.hxs.dataobject.CommentCity> gmcc.hxs.controller.PublicController.getSgwByCity(java.lang.String)
+2020-11-25 14:36:48.470  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/citys]}" onto public java.util.ArrayList<java.lang.String> gmcc.hxs.controller.PublicController.getAllCity()
+2020-11-25 14:36:48.471  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.check()
+2020-11-25 14:36:48.471  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.SrvRecord> gmcc.hxs.controller.SrvController.status(java.lang.String)
+2020-11-25 14:36:48.471  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.huige()
+2020-11-25 14:36:48.472  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.geli()
+2020-11-25 14:36:48.472  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.SrvController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.SrvRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 14:36:48.473  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-11-25 14:36:48.473  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginAction],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.loginAction(gmcc.hxs.form.UserInfoForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-11-25 14:36:48.473  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.UserController.login()
+2020-11-25 14:36:48.474  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-25 14:36:48.475  INFO 15460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-25 14:36:48.498  INFO 15460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 14:36:48.498  INFO 15460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 14:36:48.511  INFO 15460 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in userExceptionHandler
+2020-11-25 14:36:48.527  INFO 15460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 14:36:48.814  INFO 15460 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-11-25 14:36:48.977  INFO 15460 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-11-25 14:36:49.015  INFO 15460 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-11-25 14:36:49.019  INFO 15460 --- [main] gmcc.hxs.DnsApplication                  : Started DnsApplication in 4.197 seconds (JVM running for 4.982)
+2020-11-25 14:36:52.375  INFO 15460 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-11-25 14:36:52.375  INFO 15460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-25 14:36:52.395  INFO 15460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2020-11-25 14:36:52.447  INFO 15460 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-11-25 14:36:56.742  INFO 15460 --- [http-nio-8080-exec-2] gmcc.hxs.controller.SrvController        : 用户1将gzsaegw1203ber的Srv记录设置为false操作写日志入库成功！！
+2020-11-25 14:37:00.147  INFO 15460 --- [http-nio-8080-exec-3] gmcc.hxs.controller.SrvController        : 用户1将gzsaegw1203ber的Srv记录设置为false操作写日志入库成功！！
+2020-11-25 14:37:13.805  INFO 15460 --- [http-nio-8080-exec-8] gmcc.hxs.controller.SrvController        : 用户1将gzsaegw1203ber的Srv记录设置为true操作写日志入库成功！！
+2020-11-25 14:37:27.864  INFO 15460 --- [http-nio-8080-exec-10] gmcc.hxs.controller.SrvController        : 用户1将gzsaegw1203ber的Srv记录设置为false操作写日志入库成功！！
+2020-11-25 14:39:01.856  INFO 15460 --- [http-nio-8080-exec-4] gmcc.hxs.controller.AController          : 用户1将gzsaegw1201ber的A记录设置为true操作写日志入库成功！！
+2020-11-25 14:39:17.836  INFO 15460 --- [http-nio-8080-exec-8] gmcc.hxs.controller.AController          : 用户1将gzsaegw1201ber的A记录设置为false操作写日志入库成功！！
+2020-11-25 15:02:10.575  INFO 15460 --- [http-nio-8080-exec-1] gmcc.hxs.controller.NaptrController      : 用户1将gzsaegw1201ber的Naptr记录设置为true操作写日志入库成功！！
+2020-11-25 15:02:50.833  INFO 15460 --- [http-nio-8080-exec-8] gmcc.hxs.controller.NaptrController      : 用户1将gzsaegw1201ber的Naptr记录设置为false操作写日志入库成功！！
+2020-11-25 15:03:14.204  INFO 15460 --- [http-nio-8080-exec-8] gmcc.hxs.controller.SrvController        : 用户1将gzsaegw1203ber的Srv记录设置为true操作写日志入库成功！！
+2020-11-25 15:42:44.343  WARN 15460 --- [http-nio-8080-exec-10] gmcc.hxs.aspect.UserAuthorizeAspect      : [登录校验]Cookie中查不到token
+2020-11-25 15:42:45.042  WARN 15460 --- [http-nio-8080-exec-1] gmcc.hxs.aspect.UserAuthorizeAspect      : [登录校验]Cookie中查不到token
+2020-11-25 15:42:45.215  WARN 15460 --- [http-nio-8080-exec-2] gmcc.hxs.aspect.UserAuthorizeAspect      : [登录校验]Cookie中查不到token
+2020-11-25 15:43:11.447  INFO 15460 --- [http-nio-8080-exec-9] gmcc.hxs.controller.NaptrController      : 用户1将gzsaegw1201ber的Naptr记录设置为true操作写日志入库成功！！
+2020-11-25 15:47:52.646  INFO 1952 --- [main] gmcc.hxs.DnsApplication                  : Starting DnsApplication on DESKTOP-CDPGRR2 with PID 1952 (D:\code\java\sprintboot\dnsoper\target\classes started by Administrator in D:\code\java\sprintboot\dnsoper)
+2020-11-25 15:47:52.648  INFO 1952 --- [main] gmcc.hxs.DnsApplication                  : No active profile set, falling back to default profiles: default
+2020-11-25 15:47:52.688  INFO 1952 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Nov 25 15:47:52 CST 2020]; root of context hierarchy
+2020-11-25 15:47:53.222  WARN 1952 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.imooc.dataobject.mapper]' package. Please check your configuration.
+2020-11-25 15:47:53.357  WARN 1952 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[gmcc.hxs]' package. Please check your configuration.
+2020-11-25 15:47:53.385  INFO 1952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 15:47:53.459  INFO 1952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 15:47:53.502  INFO 1952 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.CommentCityRepository.
+2020-11-25 15:47:53.504  INFO 1952 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.UserInfoRepository.
+2020-11-25 15:47:53.505  INFO 1952 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.OpLogRepository.
+2020-11-25 15:47:54.202  INFO 1952 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-11-25 15:47:54.208  INFO 1952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-25 15:47:54.209  INFO 1952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2020-11-25 15:47:54.351  INFO 1952 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring embedded WebApplicationContext
+2020-11-25 15:47:54.351  INFO 1952 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1663 ms
+2020-11-25 15:47:54.481  INFO 1952 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-25 15:47:54.484  INFO 1952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-25 15:47:54.485  INFO 1952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-25 15:47:54.485  INFO 1952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-25 15:47:54.485  INFO 1952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-25 15:47:54.891  INFO 1952 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-11-25 15:47:54.900  INFO 1952 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-11-25 15:47:54.956  INFO 1952 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-11-25 15:47:54.957  INFO 1952 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-11-25 15:47:54.958  INFO 1952 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-11-25 15:47:54.988  INFO 1952 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-11-25 15:47:55.163  INFO 1952 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-11-25 15:47:55.419  INFO 1952 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-11-25 15:47:55.484  INFO 1952 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-25 15:47:56.014  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Nov 25 15:47:52 CST 2020]; root of context hierarchy
+2020-11-25 15:47:56.059  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.check()
+2020-11-25 15:47:56.060  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.ARecord> gmcc.hxs.controller.AController.status(java.lang.String)
+2020-11-25 15:47:56.061  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.AController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.ARecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 15:47:56.061  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.huige()
+2020-11-25 15:47:56.061  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.geli()
+2020-11-25 15:47:56.062  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/main/index],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.MainController.index()
+2020-11-25 15:47:56.063  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.check()
+2020-11-25 15:47:56.063  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.NaptrRecord> gmcc.hxs.controller.NaptrController.status(java.lang.String)
+2020-11-25 15:47:56.063  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.NaptrController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.NaptrRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 15:47:56.063  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.huige()
+2020-11-25 15:47:56.064  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.geli()
+2020-11-25 15:47:56.064  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/sgw]}" onto public java.util.ArrayList<gmcc.hxs.dataobject.CommentCity> gmcc.hxs.controller.PublicController.getSgwByCity(java.lang.String)
+2020-11-25 15:47:56.064  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/citys]}" onto public java.util.ArrayList<java.lang.String> gmcc.hxs.controller.PublicController.getAllCity()
+2020-11-25 15:47:56.065  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.check()
+2020-11-25 15:47:56.066  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.SrvRecord> gmcc.hxs.controller.SrvController.status(java.lang.String)
+2020-11-25 15:47:56.066  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.SrvController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.SrvRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-11-25 15:47:56.066  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.huige()
+2020-11-25 15:47:56.066  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.geli()
+2020-11-25 15:47:56.067  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-11-25 15:47:56.067  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginAction],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.loginAction(gmcc.hxs.form.UserInfoForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-11-25 15:47:56.067  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.UserController.login()
+2020-11-25 15:47:56.068  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-25 15:47:56.069  INFO 1952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-25 15:47:56.091  INFO 1952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 15:47:56.091  INFO 1952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 15:47:56.104  INFO 1952 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in userExceptionHandler
+2020-11-25 15:47:56.119  INFO 1952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-25 15:47:56.363  INFO 1952 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-11-25 15:47:56.508  INFO 1952 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-11-25 15:47:56.541  INFO 1952 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-11-25 15:47:56.545  INFO 1952 --- [main] gmcc.hxs.DnsApplication                  : Started DnsApplication in 4.139 seconds (JVM running for 4.995)
+2020-11-25 16:08:28.414  INFO 1952 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-11-25 16:08:28.414  INFO 1952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-25 16:08:28.435  INFO 1952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2020-11-25 16:08:28.488  INFO 1952 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-11-25 16:08:42.039  INFO 1952 --- [http-nio-8080-exec-10] gmcc.hxs.controller.AController          : 用户1将gzsaegw1201ber的A记录设置为true操作写日志入库成功！！
+2020-11-25 16:08:54.269  INFO 1952 --- [http-nio-8080-exec-1] gmcc.hxs.controller.AController          : 用户1将gzsaegw1201ber的A记录设置为false操作写日志入库成功！！
+2020-11-25 16:09:33.408  WARN 1952 --- [http-nio-8080-exec-10] gmcc.hxs.aspect.UserAuthorizeAspect      : [登录校验]Cookie中查不到token
+2020-11-25 16:09:38.348  WARN 1952 --- [http-nio-8080-exec-6] gmcc.hxs.aspect.UserAuthorizeAspect      : [登录校验]Cookie中查不到token
+2020-11-25 16:09:44.389  WARN 1952 --- [http-nio-8080-exec-7] gmcc.hxs.aspect.UserAuthorizeAspect      : [登录校验]Cookie中查不到token
+2020-11-25 16:09:46.108  WARN 1952 --- [http-nio-8080-exec-8] gmcc.hxs.aspect.UserAuthorizeAspect      : [登录校验]Cookie中查不到token
+2020-11-25 16:09:46.268  WARN 1952 --- [http-nio-8080-exec-9] gmcc.hxs.aspect.UserAuthorizeAspect      : [登录校验]Cookie中查不到token
