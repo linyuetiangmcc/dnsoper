@@ -14,7 +14,6 @@
                 </select>
                 <button type="button" class="btn btn-default btn-primary" onclick="querySgwStatus()">查询</button>
                 <button type="button" class="btn btn-default btn-primary" onclick="geliNaptr()">隔离</button>
-                <button type="button" class="btn btn-default btn-primary" onclick="huigeNaptr()">回割</button>
             </div>
 
             <div class="row clearfix">
@@ -28,8 +27,8 @@
                     <table class="table" style="font-size:5px;">
                         <thead>
                         <tr>
-                            <th>fqdn*</th>
-                            <th>replacement*</th>
+                            <th>name</th>
+                            <th>replacement</th>
                             <th style="color: red">disabled</th>
                             <th>services</th>
                             <th>view</th>
@@ -91,7 +90,7 @@
         var sgw = $("#sgw").val();
         $.ajax({
             type: 'get',
-            url: "/dns/sgw/status?sgw=" + sgw,
+            url: "/dns/naptr/status?sgw=" + sgw,
             success: function (data) {
                 $("#count").empty();
                 $("#count").append("共" + data.length + "条数据");
@@ -112,29 +111,17 @@
     }
 
     function geliNaptr() {
+        var sgw = $("#sgw").val();
         $.ajax({
             type: "post",
-            url: "/dns/sgw/gelihuige?disable=true",
+            url: "/dns/naptr/gelihuige?disable=true&sgw=" + sgw,
             contentType: 'application/json;charset=UTF-8',
             data: JSON.stringify(geliBody),
             success: function (data) {
-                alert("共隔离了" + data.length + "条Naptr记录！请重新查询记录状态确认结果！");
+                alert("共隔离了" + data.length + "条Srv记录！请重新查询记录状态确认结果！");
             }
         })
     }
-
-    function huigeNaptr() {
-        $.ajax({
-            type: "post",
-            url: "/dns/sgw/gelihuige?disable=false",
-            contentType: 'application/json;charset=UTF-8',
-            data: JSON.stringify(geliBody),
-            success: function (data) {
-                alert("共回割了" + data.length + "条Naptr记录！请重新查询记录状态确认结果！");
-            }
-        })
-    }
-
 </script>
 </body>
 </html>

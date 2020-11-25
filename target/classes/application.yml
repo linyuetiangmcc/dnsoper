@@ -5,7 +5,7 @@ spring:
     password: 123456
     url: jdbc:mysql://127.0.0.1/dns?characterEncoding=utf-8&useSSL=false
   jpa:
-    show-sql: true
+    show-sql: false
     hibernate:
       naming:
         strategy: org.springframework.boot.orm.jpa.hibernate.SpringNamingStrategy
@@ -14,16 +14,13 @@ spring:
     default-property-inclusion: non_null
 server:
   context-path: /dns
-logging:
-  level:
-    com.imooc.dataobject.mapper: trace
+
 gmcc:
   hxs:
     dnsip: 192.168.1.2
 #mybatis:
 #  mapper-locations: classpath:mapper/*.xml
-#logging:
-#  pattern:
-#    console: "%d - %msg%n"
-#  file: /Users/user/log/springboot/sell.log
-#  level:
+logging:
+  pattern:
+    console: "%d - %msg%n"
+  file: dns.log

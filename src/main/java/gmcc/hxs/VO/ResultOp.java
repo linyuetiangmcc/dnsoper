@@ -4,5 +4,5 @@ import lombok.Data;
 
 @Data
 public class ResultOp {
-    private NaptrRecordOp result;
+    private RecordOp result;
 }

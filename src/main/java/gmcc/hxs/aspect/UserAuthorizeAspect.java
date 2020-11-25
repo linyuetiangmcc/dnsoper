@@ -1,8 +1,11 @@
 package gmcc.hxs.aspect;
 
 import gmcc.hxs.constant.CookieConstant;
+import gmcc.hxs.constant.CurrentUserConstants;
 import gmcc.hxs.constant.RedisConstant;
+import gmcc.hxs.dataobject.Userinfo;
 import gmcc.hxs.exception.UserAuthorizeException;
+import gmcc.hxs.service.UserInfoService;
 import gmcc.hxs.utils.CookieUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.annotation.Aspect;
@@ -25,7 +28,10 @@ public class UserAuthorizeAspect {
     @Autowired
     private StringRedisTemplate redisTemplate;
 
-    @Pointcut("execution(public * gmcc.hxs.controller.MainControl*.*(..))" +
+    @Autowired
+    private UserInfoService userInfoService;
+
+    @Pointcut("execution(public * gmcc.hxs.controller.*.*(..))" +
     "&& !execution(public * gmcc.hxs.controller.UserController.*(..))")
     public void verify(){
     }
@@ -41,13 +47,14 @@ public class UserAuthorizeAspect {
             throw new UserAuthorizeException();
         }
 
-        String tokenValue = redisTemplate.opsForValue().get(String.format(RedisConstant.TOKEN_PREFIX,cookie.getValue()));
-        if(StringUtils.isEmpty(tokenValue)){
+        String userid = redisTemplate.opsForValue().get(String.format(RedisConstant.TOKEN_PREFIX,cookie.getValue()));
+        if(StringUtils.isEmpty(userid)){
             log.warn("[登录校验]Redis中查不到token");
             throw new UserAuthorizeException();
         }
 
-
+        Userinfo userinfo = userInfoService.findUserInfoByUserId(userid);
+        request.setAttribute(CurrentUserConstants.CURRENT_USER,userinfo);
     }
 
 }

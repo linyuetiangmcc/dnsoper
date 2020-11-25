@@ -5,34 +5,46 @@
                 DNS Oper
             </a>
         </li>
-        <li class="dropdown open">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-fw fa-plus"></i> 业务状态 <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-                <li class="dropdown-header">查看</li>
-                <li><a href="/dns/sgw/check">SGW业务状态</a></li>
-                <li><a href="/dns/pwg/check">PGW业务状态</a></li>
+        <li>
+            <a href="#"> NAPTR记录 <span class="caret"></span></a>
+            <ul>
+                <li></li>
+<#--                <li><a href="/dns/naptr/check">查看</a></li>-->
+                <li><a href="/dns/naptr/geli">隔离</a></li>
+                <li><a href="/dns/naptr/huige">回割</a></li>
             </ul>
         </li>
-        <li class="dropdown open">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-fw fa-plus"></i> 隔离业务 <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-                <li class="dropdown-header">隔离</li>
-                <li><a href="/sell/seller/category/list">SGW隔离</a></li>
-                <li><a href="/sell/seller/category/index">PGW隔离</a></li>
-            </ul>
-        </li>
-
-        <li class="dropdown open">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-fw fa-plus"></i> 回割业务 <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-                <li class="dropdown-header">回割</li>
-                <li><a href="/sell/seller/category/list">SGW回隔</a></li>
-                <li><a href="/sell/seller/category/index">PGW回隔</a></li>
+        <li>
+            <a href="#"> SRV记录 <span class="caret"></span></a>
+            <ul>
+                <li></li>
+<#--                <li><a href="/dns/srv/check">查看</a></li>-->
+                <li><a href="/dns/srv/geli">隔离</a></li>
+                <li><a href="/dns/srv/huige">回割</a></li>
             </ul>
         </li>
 
         <li>
-            <a href="/dns/user/logout"><i class="fa fa-fw fa-list-alt"></i> 登出</a>
+            <a href="#"> A记录 <span class="caret"></span></a>
+            <ul>
+                <li></li>
+<#--                <li><a href="/dns/a/check">查看</a></li>-->
+                <li><a href="/dns/a/geli">隔离</a></li>
+                <li><a href="/dns/a/huige">回割</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#"> 日志 <span class="caret"></span></a>
+            <ul>
+                <li></li>
+                <li><a href="/dns/log/oplog">操作日志</a></li>
+                <li><a href="/dns/log/syslog">系统日志</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="/dns/user/logout"> 登出</a>
         </li>
     </ul>
 </nav>

@@ -1,27 +1,29 @@
 package gmcc.hxs.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import gmcc.hxs.VO.NaptrRecord;
-import gmcc.hxs.VO.NaptrRecordOp;
+import gmcc.hxs.VO.RecordOp;
 import gmcc.hxs.VO.ResultNaptr;
 import gmcc.hxs.VO.ResultOp;
+import gmcc.hxs.constant.CurrentUserConstants;
 import gmcc.hxs.dataobject.OpLog;
+import gmcc.hxs.dataobject.Userinfo;
 import gmcc.hxs.service.OpLogService;
 import gmcc.hxs.utils.HttpClientUtil;
 import gmcc.hxs.utils.KeyUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
+import javax.servlet.http.HttpServletRequest;
 import java.util.*;
 
 @Controller
-@RequestMapping("/sgw")
-//@CrossOrigin
-public class SgwController {
+@RequestMapping("/naptr")
+@Slf4j
+public class NaptrController {
     @Autowired
     private OpLogService opLogService;
 
@@ -30,15 +32,25 @@ public class SgwController {
 
     @GetMapping("/check")
     public String check(){
-        return "sgw/check";
+        return "naptr/check";
+    }
+
+    @GetMapping("/geli")
+    public String geli(){
+        return "naptr/geli";
+    }
+
+    @GetMapping("/huige")
+    public String huige(){
+        return "naptr/huige";
     }
 
     @PostMapping("/gelihuige")
     @ResponseBody
-    public ArrayList<NaptrRecordOp> gelihuige(@RequestBody ArrayList<NaptrRecord> geliBody, @RequestParam String disable){
+    public ArrayList<RecordOp> gelihuige(@RequestBody ArrayList<NaptrRecord> geliBody, @RequestParam String disable, HttpServletRequest request, @RequestParam String sgw){
         Map<String, String> httpHeadMap = getHttpHeader();
         String result = "";
-        ArrayList<NaptrRecordOp> naptrRecordOpArrayList = new ArrayList<>();
+        ArrayList<RecordOp> recordOpArrayList = new ArrayList<>();
         //int count = 0;
         for (NaptrRecord naptrRecord:geliBody
              ) {
@@ -49,35 +61,40 @@ public class SgwController {
             //System.out.println(result);
             if(disable.equals("true")) {
                 if (resultOp != null && resultOp.getResult().isDisable())
-                    naptrRecordOpArrayList.add(resultOp.getResult());
+                    recordOpArrayList.add(resultOp.getResult());
             }
             else{
                 if (resultOp != null && !resultOp.getResult().isDisable())
-                    naptrRecordOpArrayList.add(resultOp.getResult());
+                    recordOpArrayList.add(resultOp.getResult());
             }
         }
         //操作记录入库
-        String str= JSON.toJSON(naptrRecordOpArrayList).toString();
+        String str= JSON.toJSON(recordOpArrayList).toString();
         OpLog opLog = new OpLog();
         opLog.setCreateTime(new Date());
-        opLog.setNeList(str);
-        opLog.setUserId("1");
+        opLog.setRecords(str);
+        String userid = ((Userinfo)request.getAttribute(CurrentUserConstants.CURRENT_USER)).getUserId();
+        opLog.setUserId(userid);
         if(disable.equals("true"))
             opLog.setOperation("disable");
         else
             opLog.setOperation("enable");
         opLog.setOpId(KeyUtil.genUniqueKey());
+        opLog.setRecordType("NAPTR");
+        opLog.setComment(sgw);
 
-        OpLog resutl = opLogService.create(opLog);
-        System.out.println(resutl);
+        OpLog opresult = opLogService.create(opLog);
+        if(opresult != null){
+            log.info("用户" + userid + "将" + sgw + "的Naptr记录设置为" + disable +"操作写日志入库成功！！");
+        }
 
-
-        /*String str= JSON.toJSON(naptrRecordOpArrayList).toString();
+        /*拆装LOG record记录代码如下
+        String str= JSON.toJSON(naptrRecordOpArrayList).toString();
         System.out.println(str);
         ArrayList<NaptrRecordOp> naptrRecordOpArrayList2 = new ArrayList<>();
         naptrRecordOpArrayList2 = (ArrayList<NaptrRecordOp>) JSONObject.parseArray(str,NaptrRecordOp.class);
         System.out.println(naptrRecordOpArrayList2.size());*/
-        return naptrRecordOpArrayList;
+        return recordOpArrayList;
     }
     @GetMapping("/status")
     @ResponseBody

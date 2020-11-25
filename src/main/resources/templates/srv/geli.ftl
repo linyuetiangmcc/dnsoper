@@ -13,8 +13,7 @@
                     <option value="">选择sgw</option>
                 </select>
                 <button type="button" class="btn btn-default btn-primary" onclick="querySgwStatus()">查询</button>
-                <button type="button" class="btn btn-default btn-primary" onclick="geliNaptr()">隔离</button>
-                <button type="button" class="btn btn-default btn-primary" onclick="huigeNaptr()">回割</button>
+                <button type="button" class="btn btn-default btn-primary" onclick="geliSrv()">隔离</button>
             </div>
 
             <div class="row clearfix">
@@ -28,11 +27,11 @@
                     <table class="table" style="font-size:5px;">
                         <thead>
                         <tr>
-                            <th>fqdn*</th>
-                            <th>replacement*</th>
+                            <th>name</th>
+                            <th>target</th>
                             <th style="color: red">disabled</th>
-                            <th>services</th>
-                            <th>view</th>
+                            <th>priority</th>
+                            <th>shared_record_group</th>
                         </tr>
                         </thead>
                         <tbody id="record">
@@ -91,7 +90,7 @@
         var sgw = $("#sgw").val();
         $.ajax({
             type: 'get',
-            url: "/dns/sgw/status?sgw=" + sgw,
+            url: "/dns/srv/status?sgw=" + sgw,
             success: function (data) {
                 $("#count").empty();
                 $("#count").append("共" + data.length + "条数据");
@@ -101,40 +100,28 @@
                 for (var i = 0; i < data.length; i++) {
                     $("#record").append(
                         "<tr><td>" + data[i].name +"</td>" +
-                        "<td>" + data[i].replacement +"</td>" +
+                        "<td>" + data[i].target +"</td>" +
                         "<td style=\"color: #ff0000\">" + data[i]["disable"] +"</td>" +
-                        "<td>" + data[i].services +"</td>" +
-                        "<td>" + data[i].view +"</td></tr>");
+                        "<td>" + data[i].priority +"</td>" +
+                        "<td>" + data[i].shared_record_group +"</td></tr>");
                 }
-                alert("共查到" + data.length + "条Naptr记录！");
+                alert("共查到" + data.length + "条Srv记录！");
             }
         })
     }
 
-    function geliNaptr() {
+    function geliSrv() {
+        var sgw = $("#sgw").val();
         $.ajax({
             type: "post",
-            url: "/dns/sgw/gelihuige?disable=true",
+            url: "/dns/srv/gelihuige?disable=true&sgw=" + sgw,
             contentType: 'application/json;charset=UTF-8',
             data: JSON.stringify(geliBody),
             success: function (data) {
-                alert("共隔离了" + data.length + "条Naptr记录！请重新查询记录状态确认结果！");
+                alert("共隔离了" + data.length + "条Srv记录！请重新查询记录状态确认结果！");
             }
         })
     }
-
-    function huigeNaptr() {
-        $.ajax({
-            type: "post",
-            url: "/dns/sgw/gelihuige?disable=false",
-            contentType: 'application/json;charset=UTF-8',
-            data: JSON.stringify(geliBody),
-            success: function (data) {
-                alert("共回割了" + data.length + "条Naptr记录！请重新查询记录状态确认结果！");
-            }
-        })
-    }
-
 </script>
 </body>
 </html>

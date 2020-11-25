@@ -17,8 +17,10 @@ public class OpLog {
     @Column(name = "userid")
     private String userId;
     private String operation;
-    @Column(name = "nelist")
-    private String neList;
+    @Column(name = "records")
+    private String records;
     private Date createTime;
     private Date updateTime;
+    private String recordType;
+    private String comment;
 }
