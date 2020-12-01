@@ -32,7 +32,7 @@ public class UserAuthorizeAspect {
     private UserInfoService userInfoService;
 
     @Pointcut("execution(public * gmcc.hxs.controller.*.*(..))" +
-    "&& !execution(public * gmcc.hxs.controller.UserController.*(..))")
+    "&& !execution(public * gmcc.hxs.controller.UserController.login*(..))")
     public void verify(){
     }
 

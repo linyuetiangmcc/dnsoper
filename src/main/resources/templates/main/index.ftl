@@ -9,7 +9,7 @@
         <div class="container-fluid">
             <div class="row clearfix">
                 <div class="container">
-                    请选择操作！！
+                    Welcome: ${username!""}, 请选择左边菜单操作！！
                 </div>
             </div>
         </div>

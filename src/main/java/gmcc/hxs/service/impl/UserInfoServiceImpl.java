@@ -20,4 +20,9 @@ public class UserInfoServiceImpl implements UserInfoService {
     public Userinfo findUserInfoByUsername(String username) {
         return repository.findByUsername(username);
     }
+
+    @Override
+    public Userinfo updateUserInfo(Userinfo userinfo) {
+        return repository.save(userinfo);
+    }
 }

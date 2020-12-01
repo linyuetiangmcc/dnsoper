@@ -38,6 +38,4 @@ public class OpLogServiceImpl implements OpLogService {
     public OpLog create(OpLog opLog) {
         return repository.save(opLog);
     }
-
-
 }

@@ -43,6 +43,15 @@
         </li>
 
         <li>
+            <a href="#"> 我的 <span class="caret"></span></a>
+            <ul>
+                <li></li>
+                <li><a href="/dns/user/detail">我的信息</a></li>
+                <li><a href="/dns/user/changepwd">修改密码</a></li>
+            </ul>
+        </li>
+
+        <li>
             <a href="/dns/user/logout"> 登出</a>
         </li>
     </ul>
