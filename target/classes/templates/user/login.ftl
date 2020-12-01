@@ -1,6 +1,6 @@
 <html>
 <#include "../common/header.ftl">
-<body>
+<body background="/dns/pic/timg.jpg"; background-size="100% 100%"; background-attachment="fixed">
 <br>
 <br>
 <h1>
@@ -9,6 +9,8 @@
 
 <div class="container">
     <div class="row clearfix">
+        <div class="col-md-4 column">
+        </div>
         <div class="col-md-4 column">
             <form role="form" title="登录信息" method="post" action="/dns/user/loginAction">
                 <div class="form-group">
@@ -19,6 +21,8 @@
                 </div>
                 <button type="submit" class="btn btn-default">登录</button>
             </form>
+        </div>
+        <div class="col-md-4 column">
         </div>
     </div>
 </div>

@@ -11,4 +11,5 @@ public interface OpLogRepository extends JpaRepository<OpLog,Integer> {
     OpLog findById(Integer id);
     ArrayList<OpLog> findByUserId(String userId);
     ArrayList<OpLog> findOpLogsByCreateTimeAfter(Date createTime);
+    ArrayList<OpLog> findOpLogsByCreateTimeAfterAndUserId(Date createTime,String userId);
 }

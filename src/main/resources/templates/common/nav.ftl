@@ -39,7 +39,6 @@
             <ul>
                 <li></li>
                 <li><a href="/dns/log/oplog">操作日志</a></li>
-                <li><a href="/dns/log/syslog">系统日志</a></li>
             </ul>
         </li>
 

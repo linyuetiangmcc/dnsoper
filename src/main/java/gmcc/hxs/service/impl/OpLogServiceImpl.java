@@ -30,6 +30,11 @@ public class OpLogServiceImpl implements OpLogService {
     }
 
     @Override
+    public ArrayList<OpLog> findOpLogsByCreateTimeAfterAndUserId(Date createTime, String userId) {
+        return repository.findOpLogsByCreateTimeAfterAndUserId(createTime,userId);
+    }
+
+    @Override
     public OpLog create(OpLog opLog) {
         return repository.save(opLog);
     }
