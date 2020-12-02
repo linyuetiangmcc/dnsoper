@@ -15,7 +15,7 @@
                             <label for="exampleInputEmail1" style="color: blue">操作id：</label><label for="exampleInputEmail1">${opLog.opId}</label>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1" style="color: blue">用户id：</label><label for="exampleInputEmail1">${opLog.userId}</label>
+                            <label for="exampleInputEmail1" style="color: blue">用户名：</label><label for="exampleInputEmail1">${userinfo.username}</label>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1" style="color: blue">操作类型：</label><label for="exampleInputEmail1">${opLog.operation}</label>

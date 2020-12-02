@@ -10,6 +10,7 @@ import gmcc.hxs.constant.CurrentUserConstants;
 import gmcc.hxs.dataobject.OpLog;
 import gmcc.hxs.dataobject.Userinfo;
 import gmcc.hxs.service.OpLogService;
+import gmcc.hxs.service.UserInfoService;
 import gmcc.hxs.utils.HttpClientUtil;
 import gmcc.hxs.utils.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -33,13 +34,22 @@ public class LogController {
     @Autowired
     private OpLogService opLogService;
 
+    @Autowired
+    private UserInfoService userInfoService;
+
     @Value(value = "${gmcc.hxs.dnsip}")
     private String ip;
 
 
     @GetMapping("/oplog")
-    public ModelAndView oplog(Map<String,Object> map,@RequestParam(defaultValue = "2020-11-28") String dateString,
+    public ModelAndView oplog(Map<String,Object> map,@RequestParam(required=false) String dateString,
                               HttpServletRequest request) throws ParseException {
+        if(dateString == null){
+            //map.put("opLogs",null);
+            //map.put("userinfo",null);
+            return new ModelAndView("log/oplog");
+        }
+
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date queryDate = dateFormat.parse(dateString);
 
@@ -52,15 +62,20 @@ public class LogController {
             queryDate.setTime(past7day.getTime());
 
         String userid = ((Userinfo)request.getAttribute(CurrentUserConstants.CURRENT_USER)).getUserId();
+        Userinfo userinfo = userInfoService.findUserInfoByUserId(userid);
         ArrayList<OpLog> opLogs = opLogService.findOpLogsByCreateTimeAfterAndUserId(queryDate,userid);
         map.put("opLogs",opLogs);
+        map.put("userinfo",userinfo);
         return new ModelAndView("log/oplog",map);
     }
 
     @GetMapping("/detail")
-    public ModelAndView detail(Map<String,Object> map,@RequestParam Integer id) {
+    public ModelAndView detail(Map<String,Object> map,@RequestParam Integer id,HttpServletRequest request) {
+        String userid = ((Userinfo)request.getAttribute(CurrentUserConstants.CURRENT_USER)).getUserId();
+        Userinfo userinfo = userInfoService.findUserInfoByUserId(userid);
         OpLog opLog = opLogService.findById(id);
         map.put("opLog",opLog);
+        map.put("userinfo",userinfo);
         return new ModelAndView("log/detail",map);
     }
 

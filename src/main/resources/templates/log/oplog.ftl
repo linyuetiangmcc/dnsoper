@@ -23,7 +23,7 @@
                         <thead>
                         <tr>
                             <th>操作ID</th>
-                            <th>用户ID</th>
+                            <th>用户名</th>
                             <th>操作类型</th>
                             <th>操作时间</th>
                             <th>记录类型</th>
@@ -33,20 +33,22 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <#list opLogs as opLog>
-                            <tr>
-                                <td>${opLog.opId}</td>
-                                <td>${opLog.userId}</td>
-                                <td>${opLog.operation}</td>
-                                <td>${opLog.createTime}</td>
-                                <td>${opLog.recordType}</td>
-                                <td>${opLog.comment}</td>
-                                <td>
+                        <#if opLogs?? && (opLogs?size > 0) >
+                            <#list opLogs as opLog>
+                                <tr>
+                                    <td>${opLog.opId}</td>
+                                    <td>${userinfo.username}</td>
+                                    <td>${opLog.operation}</td>
+                                    <td>${opLog.createTime}</td>
+                                    <td>${opLog.recordType}</td>
+                                    <td>${opLog.comment}</td>
+                                    <td>
                                         <a href="/dns/log/detail?id=${opLog.id}">详情</a>
-                                </td>
-                                <td></td>
-                            </tr>
-                        </#list>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </#list>
+                        </#if>
                         </tbody>
                     </table>
                 </div>

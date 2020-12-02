@@ -13326,3 +13326,608 @@ FTL stack trace ("~" means nesting-related):
 2020-12-01 15:32:55.031  INFO 652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
 2020-12-01 15:32:55.084  INFO 652 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
 2020-12-01 15:39:10.593  WARN 652 --- [http-nio-8080-exec-1] gmcc.hxs.aspect.UserAuthorizeAspect      : [登录校验]Redis中查不到token
+2020-12-02 08:20:21.452  INFO 5108 --- [main] gmcc.hxs.DnsApplication                  : Starting DnsApplication on DESKTOP-CDPGRR2 with PID 5108 (D:\code\java\sprintboot\dnsoper\target\classes started by Administrator in D:\code\java\sprintboot\dnsoper)
+2020-12-02 08:20:21.454  INFO 5108 --- [main] gmcc.hxs.DnsApplication                  : No active profile set, falling back to default profiles: default
+2020-12-02 08:20:21.504  INFO 5108 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Dec 02 08:20:21 CST 2020]; root of context hierarchy
+2020-12-02 08:20:22.032  WARN 5108 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.imooc.dataobject.mapper]' package. Please check your configuration.
+2020-12-02 08:20:22.189  WARN 5108 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[gmcc.hxs]' package. Please check your configuration.
+2020-12-02 08:20:22.227  INFO 5108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-02 08:20:22.334  INFO 5108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-02 08:20:22.397  INFO 5108 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.CommentCityRepository.
+2020-12-02 08:20:22.399  INFO 5108 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.UserInfoRepository.
+2020-12-02 08:20:22.400  INFO 5108 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.OpLogRepository.
+2020-12-02 08:20:23.406  INFO 5108 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-12-02 08:20:23.414  INFO 5108 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-02 08:20:23.415  INFO 5108 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2020-12-02 08:20:23.555  INFO 5108 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring embedded WebApplicationContext
+2020-12-02 08:20:23.555  INFO 5108 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2051 ms
+2020-12-02 08:20:23.682  INFO 5108 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-12-02 08:20:23.686  INFO 5108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12-02 08:20:23.686  INFO 5108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12-02 08:20:23.686  INFO 5108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-12-02 08:20:23.686  INFO 5108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-12-02 08:20:24.114  INFO 5108 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-12-02 08:20:24.122  INFO 5108 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-02 08:20:24.176  INFO 5108 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-12-02 08:20:24.177  INFO 5108 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-12-02 08:20:24.178  INFO 5108 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-12-02 08:20:24.209  INFO 5108 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-12-02 08:20:24.397  INFO 5108 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-12-02 08:20:24.657  INFO 5108 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-12-02 08:20:24.732  INFO 5108 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-02 08:20:25.287  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Dec 02 08:20:21 CST 2020]; root of context hierarchy
+2020-12-02 08:20:25.334  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.geli()
+2020-12-02 08:20:25.336  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.AController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.ARecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-12-02 08:20:25.336  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.huige()
+2020-12-02 08:20:25.336  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.check()
+2020-12-02 08:20:25.337  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.ARecord> gmcc.hxs.controller.AController.status(java.lang.String)
+2020-12-02 08:20:25.338  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.LogController.detail(java.util.Map<java.lang.String, java.lang.Object>,java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2020-12-02 08:20:25.338  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log/oplog],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.LogController.oplog(java.util.Map<java.lang.String, java.lang.Object>,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.text.ParseException
+2020-12-02 08:20:25.338  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.LogController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.NaptrRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-12-02 08:20:25.338  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.NaptrRecord> gmcc.hxs.controller.LogController.status(java.lang.String)
+2020-12-02 08:20:25.339  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/main/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.MainController.index(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-02 08:20:25.340  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.geli()
+2020-12-02 08:20:25.340  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.NaptrController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.NaptrRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-12-02 08:20:25.340  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.huige()
+2020-12-02 08:20:25.340  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.check()
+2020-12-02 08:20:25.341  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.NaptrRecord> gmcc.hxs.controller.NaptrController.status(java.lang.String)
+2020-12-02 08:20:25.341  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/citys]}" onto public java.util.ArrayList<java.lang.String> gmcc.hxs.controller.PublicController.getAllCity()
+2020-12-02 08:20:25.341  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/sgw]}" onto public java.util.ArrayList<gmcc.hxs.dataobject.CommentCity> gmcc.hxs.controller.PublicController.getSgwByCity(java.lang.String)
+2020-12-02 08:20:25.343  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.geli()
+2020-12-02 08:20:25.344  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.SrvController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.SrvRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-12-02 08:20:25.344  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.huige()
+2020-12-02 08:20:25.344  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.check()
+2020-12-02 08:20:25.344  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.SrvRecord> gmcc.hxs.controller.SrvController.status(java.lang.String)
+2020-12-02 08:20:25.346  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.detail(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-02 08:20:25.346  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changepwdAction],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.changepwdAction(gmcc.hxs.form.ChangePWDForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletRequest)
+2020-12-02 08:20:25.346  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-02 08:20:25.346  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginAction],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.loginAction(gmcc.hxs.form.UserInfoForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-02 08:20:25.346  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.UserController.login()
+2020-12-02 08:20:25.346  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changepwd],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.UserController.changepwd()
+2020-12-02 08:20:25.348  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-12-02 08:20:25.348  INFO 5108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-12-02 08:20:25.370  INFO 5108 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-02 08:20:25.370  INFO 5108 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-02 08:20:25.383  INFO 5108 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in userExceptionHandler
+2020-12-02 08:20:25.399  INFO 5108 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-02 08:20:25.662  INFO 5108 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-12-02 08:20:25.806  INFO 5108 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-12-02 08:20:25.841  INFO 5108 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-12-02 08:20:25.845  INFO 5108 --- [main] gmcc.hxs.DnsApplication                  : Started DnsApplication in 4.646 seconds (JVM running for 5.493)
+2020-12-02 08:20:37.477  INFO 5108 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-12-02 08:20:37.477  INFO 5108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-12-02 08:20:37.504  INFO 5108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2020-12-02 08:20:37.530  WARN 5108 --- [http-nio-8080-exec-1] gmcc.hxs.aspect.UserAuthorizeAspect      : [登录校验]Cookie中查不到token
+2020-12-02 08:20:49.525  INFO 5108 --- [http-nio-8080-exec-7] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-12-02 08:21:05.475 ERROR 5108 --- [http-nio-8080-exec-3] freemarker.runtime                       : Error executing FreeMarker template
+
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> opLogs  [in template "log/oplog.ftl" at line 36, column 32]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #list opLogs as opLog  [in template "log/oplog.ftl" at line 36, column 25]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Expression.assertNonNull(Expression.java:217) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:103) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Environment.visit(Environment.java:326) [freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Environment.visit(Environment.java:332) [freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Environment.process(Environment.java:305) [freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.template.Template.process(Template.java:378) [freemarker-2.3.26-incubating.jar:2.3.26]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
+
+2020-12-02 08:21:05.479 ERROR 5108 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/dns] threw exception [Request processing failed; nested exception is freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> opLogs  [in template "log/oplog.ftl" at line 36, column 32]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #list opLogs as opLog  [in template "log/oplog.ftl" at line 36, column 25]
+----] with root cause
+
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> opLogs  [in template "log/oplog.ftl" at line 36, column 32]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #list opLogs as opLog  [in template "log/oplog.ftl" at line 36, column 25]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Expression.assertNonNull(Expression.java:217) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:103) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Environment.visit(Environment.java:326) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Environment.visit(Environment.java:332) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Environment.process(Environment.java:305) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.template.Template.process(Template.java:378) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
+
+2020-12-02 08:24:28.695  INFO 11144 --- [main] gmcc.hxs.DnsApplication                  : Starting DnsApplication on DESKTOP-CDPGRR2 with PID 11144 (D:\code\java\sprintboot\dnsoper\target\classes started by Administrator in D:\code\java\sprintboot\dnsoper)
+2020-12-02 08:24:28.696  INFO 11144 --- [main] gmcc.hxs.DnsApplication                  : No active profile set, falling back to default profiles: default
+2020-12-02 08:24:28.737  INFO 11144 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Dec 02 08:24:28 CST 2020]; root of context hierarchy
+2020-12-02 08:24:29.274  WARN 11144 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.imooc.dataobject.mapper]' package. Please check your configuration.
+2020-12-02 08:24:29.439  WARN 11144 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[gmcc.hxs]' package. Please check your configuration.
+2020-12-02 08:24:29.482  INFO 11144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-02 08:24:29.577  INFO 11144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-02 08:24:29.632  INFO 11144 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.CommentCityRepository.
+2020-12-02 08:24:29.633  INFO 11144 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.UserInfoRepository.
+2020-12-02 08:24:29.634  INFO 11144 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.OpLogRepository.
+2020-12-02 08:24:30.377  INFO 11144 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-12-02 08:24:30.383  INFO 11144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-02 08:24:30.384  INFO 11144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2020-12-02 08:24:30.546  INFO 11144 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring embedded WebApplicationContext
+2020-12-02 08:24:30.547  INFO 11144 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1812 ms
+2020-12-02 08:24:30.718  INFO 11144 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-12-02 08:24:30.722  INFO 11144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12-02 08:24:30.722  INFO 11144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12-02 08:24:30.722  INFO 11144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-12-02 08:24:30.722  INFO 11144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-12-02 08:24:31.174  INFO 11144 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-12-02 08:24:31.183  INFO 11144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-02 08:24:31.226  INFO 11144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-12-02 08:24:31.227  INFO 11144 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-12-02 08:24:31.228  INFO 11144 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-12-02 08:24:31.254  INFO 11144 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-12-02 08:24:31.416  INFO 11144 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-12-02 08:24:31.641  INFO 11144 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-12-02 08:24:31.717  INFO 11144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-02 08:24:32.245  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Dec 02 08:24:28 CST 2020]; root of context hierarchy
+2020-12-02 08:24:32.293  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.AController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.ARecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-12-02 08:24:32.294  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.huige()
+2020-12-02 08:24:32.294  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.geli()
+2020-12-02 08:24:32.294  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.check()
+2020-12-02 08:24:32.294  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.ARecord> gmcc.hxs.controller.AController.status(java.lang.String)
+2020-12-02 08:24:32.295  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.LogController.detail(java.util.Map<java.lang.String, java.lang.Object>,java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2020-12-02 08:24:32.296  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.LogController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.NaptrRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-12-02 08:24:32.296  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log/oplog],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.LogController.oplog(java.util.Map<java.lang.String, java.lang.Object>,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.text.ParseException
+2020-12-02 08:24:32.296  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.NaptrRecord> gmcc.hxs.controller.LogController.status(java.lang.String)
+2020-12-02 08:24:32.297  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/main/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.MainController.index(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-02 08:24:32.298  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.NaptrController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.NaptrRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-12-02 08:24:32.298  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.huige()
+2020-12-02 08:24:32.298  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.geli()
+2020-12-02 08:24:32.298  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.check()
+2020-12-02 08:24:32.299  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.NaptrRecord> gmcc.hxs.controller.NaptrController.status(java.lang.String)
+2020-12-02 08:24:32.299  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/sgw]}" onto public java.util.ArrayList<gmcc.hxs.dataobject.CommentCity> gmcc.hxs.controller.PublicController.getSgwByCity(java.lang.String)
+2020-12-02 08:24:32.299  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/citys]}" onto public java.util.ArrayList<java.lang.String> gmcc.hxs.controller.PublicController.getAllCity()
+2020-12-02 08:24:32.302  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.SrvController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.SrvRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-12-02 08:24:32.302  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.huige()
+2020-12-02 08:24:32.302  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.geli()
+2020-12-02 08:24:32.303  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.check()
+2020-12-02 08:24:32.303  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.SrvRecord> gmcc.hxs.controller.SrvController.status(java.lang.String)
+2020-12-02 08:24:32.304  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.detail(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-02 08:24:32.304  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changepwd],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.UserController.changepwd()
+2020-12-02 08:24:32.304  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginAction],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.loginAction(gmcc.hxs.form.UserInfoForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-02 08:24:32.304  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.UserController.login()
+2020-12-02 08:24:32.305  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-02 08:24:32.305  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changepwdAction],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.changepwdAction(gmcc.hxs.form.ChangePWDForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletRequest)
+2020-12-02 08:24:32.306  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-12-02 08:24:32.306  INFO 11144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-12-02 08:24:32.328  INFO 11144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-02 08:24:32.328  INFO 11144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-02 08:24:32.340  INFO 11144 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in userExceptionHandler
+2020-12-02 08:24:32.355  INFO 11144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-02 08:24:32.600  INFO 11144 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-12-02 08:24:32.742  INFO 11144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-12-02 08:24:32.778  INFO 11144 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-12-02 08:24:32.781  INFO 11144 --- [main] gmcc.hxs.DnsApplication                  : Started DnsApplication in 4.314 seconds (JVM running for 5.053)
+2020-12-02 08:24:37.457  INFO 11144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-12-02 08:24:37.457  INFO 11144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-12-02 08:24:37.480  INFO 11144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2020-12-02 08:24:37.534  INFO 11144 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-12-02 08:24:37.664 ERROR 11144 --- [http-nio-8080-exec-1] freemarker.runtime                       : Error executing FreeMarker template
+
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> opLogs  [in template "log/oplog.ftl" at line 36, column 32]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #list opLogs as opLog  [in template "log/oplog.ftl" at line 36, column 25]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Expression.assertNonNull(Expression.java:217) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:103) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Environment.visit(Environment.java:326) [freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Environment.visit(Environment.java:332) [freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Environment.process(Environment.java:305) [freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.template.Template.process(Template.java:378) [freemarker-2.3.26-incubating.jar:2.3.26]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
+
+2020-12-02 08:24:37.672 ERROR 11144 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/dns] threw exception [Request processing failed; nested exception is freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> opLogs  [in template "log/oplog.ftl" at line 36, column 32]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #list opLogs as opLog  [in template "log/oplog.ftl" at line 36, column 25]
+----] with root cause
+
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> opLogs  [in template "log/oplog.ftl" at line 36, column 32]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #list opLogs as opLog  [in template "log/oplog.ftl" at line 36, column 25]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Expression.assertNonNull(Expression.java:217) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:103) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Environment.visit(Environment.java:326) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Environment.visit(Environment.java:332) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.core.Environment.process(Environment.java:305) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at freemarker.template.Template.process(Template.java:378) ~[freemarker-2.3.26-incubating.jar:2.3.26]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
+
+2020-12-02 08:28:43.165  INFO 12172 --- [main] gmcc.hxs.DnsApplication                  : Starting DnsApplication on DESKTOP-CDPGRR2 with PID 12172 (D:\code\java\sprintboot\dnsoper\target\classes started by Administrator in D:\code\java\sprintboot\dnsoper)
+2020-12-02 08:28:43.167  INFO 12172 --- [main] gmcc.hxs.DnsApplication                  : No active profile set, falling back to default profiles: default
+2020-12-02 08:28:43.225  INFO 12172 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Dec 02 08:28:43 CST 2020]; root of context hierarchy
+2020-12-02 08:28:43.739  WARN 12172 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.imooc.dataobject.mapper]' package. Please check your configuration.
+2020-12-02 08:28:43.926  WARN 12172 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[gmcc.hxs]' package. Please check your configuration.
+2020-12-02 08:28:43.965  INFO 12172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-02 08:28:44.045  INFO 12172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-02 08:28:44.101  INFO 12172 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.CommentCityRepository.
+2020-12-02 08:28:44.102  INFO 12172 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.UserInfoRepository.
+2020-12-02 08:28:44.103  INFO 12172 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface gmcc.hxs.respository.OpLogRepository.
+2020-12-02 08:28:44.867  INFO 12172 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-12-02 08:28:44.873  INFO 12172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-02 08:28:44.874  INFO 12172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2020-12-02 08:28:45.039  INFO 12172 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring embedded WebApplicationContext
+2020-12-02 08:28:45.039  INFO 12172 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1815 ms
+2020-12-02 08:28:45.199  INFO 12172 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-12-02 08:28:45.202  INFO 12172 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12-02 08:28:45.203  INFO 12172 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12-02 08:28:45.203  INFO 12172 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-12-02 08:28:45.203  INFO 12172 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-12-02 08:28:45.643  INFO 12172 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-12-02 08:28:45.652  INFO 12172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-02 08:28:45.692  INFO 12172 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-12-02 08:28:45.693  INFO 12172 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-12-02 08:28:45.693  INFO 12172 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-12-02 08:28:45.719  INFO 12172 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-12-02 08:28:45.877  INFO 12172 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-12-02 08:28:46.121  INFO 12172 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-12-02 08:28:46.207  INFO 12172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-02 08:28:46.738  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7334aada: startup date [Wed Dec 02 08:28:43 CST 2020]; root of context hierarchy
+2020-12-02 08:28:46.781  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.huige()
+2020-12-02 08:28:46.782  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.geli()
+2020-12-02 08:28:46.784  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.AController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.ARecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-12-02 08:28:46.784  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.AController.check()
+2020-12-02 08:28:46.784  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/a/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.ARecord> gmcc.hxs.controller.AController.status(java.lang.String)
+2020-12-02 08:28:46.785  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.LogController.detail(java.util.Map<java.lang.String, java.lang.Object>,java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2020-12-02 08:28:46.785  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.LogController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.NaptrRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-12-02 08:28:46.786  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log/oplog],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.LogController.oplog(java.util.Map<java.lang.String, java.lang.Object>,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.text.ParseException
+2020-12-02 08:28:46.786  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.NaptrRecord> gmcc.hxs.controller.LogController.status(java.lang.String)
+2020-12-02 08:28:46.786  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/main/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.MainController.index(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-02 08:28:46.787  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.huige()
+2020-12-02 08:28:46.788  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.geli()
+2020-12-02 08:28:46.788  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.NaptrController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.NaptrRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-12-02 08:28:46.788  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.NaptrController.check()
+2020-12-02 08:28:46.788  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/naptr/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.NaptrRecord> gmcc.hxs.controller.NaptrController.status(java.lang.String)
+2020-12-02 08:28:46.789  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/citys]}" onto public java.util.ArrayList<java.lang.String> gmcc.hxs.controller.PublicController.getAllCity()
+2020-12-02 08:28:46.789  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/sgw]}" onto public java.util.ArrayList<gmcc.hxs.dataobject.CommentCity> gmcc.hxs.controller.PublicController.getSgwByCity(java.lang.String)
+2020-12-02 08:28:46.791  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/huige],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.huige()
+2020-12-02 08:28:46.791  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/geli],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.geli()
+2020-12-02 08:28:46.791  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/gelihuige],methods=[POST]}" onto public java.util.ArrayList<gmcc.hxs.VO.RecordOp> gmcc.hxs.controller.SrvController.gelihuige(java.util.ArrayList<gmcc.hxs.VO.SrvRecord>,java.lang.String,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-12-02 08:28:46.792  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/check],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.SrvController.check()
+2020-12-02 08:28:46.792  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/srv/status],methods=[GET]}" onto public java.util.ArrayList<gmcc.hxs.VO.SrvRecord> gmcc.hxs.controller.SrvController.status(java.lang.String)
+2020-12-02 08:28:46.793  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.detail(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-02 08:28:46.793  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.UserController.login()
+2020-12-02 08:28:46.793  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changepwdAction],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.changepwdAction(gmcc.hxs.form.ChangePWDForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletRequest)
+2020-12-02 08:28:46.794  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginAction],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.loginAction(gmcc.hxs.form.UserInfoForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-02 08:28:46.794  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changepwd],methods=[GET]}" onto public java.lang.String gmcc.hxs.controller.UserController.changepwd()
+2020-12-02 08:28:46.794  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView gmcc.hxs.controller.UserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-02 08:28:46.795  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-12-02 08:28:46.795  INFO 12172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-12-02 08:28:46.817  INFO 12172 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-02 08:28:46.817  INFO 12172 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-02 08:28:46.829  INFO 12172 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in userExceptionHandler
+2020-12-02 08:28:46.844  INFO 12172 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-02 08:28:47.096  INFO 12172 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-12-02 08:28:47.224  INFO 12172 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-12-02 08:28:47.259  INFO 12172 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-12-02 08:28:47.262  INFO 12172 --- [main] gmcc.hxs.DnsApplication                  : Started DnsApplication in 4.341 seconds (JVM running for 5.104)
+2020-12-02 08:28:54.504  INFO 12172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/dns]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-12-02 08:28:54.504  INFO 12172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-12-02 08:28:54.531  INFO 12172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2020-12-02 08:28:54.589  INFO 12172 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-12-02 08:55:27.777 ERROR 12172 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/dns] threw exception [Request processing failed; nested exception is java.text.ParseException: Unparseable date: ""] with root cause
+
+java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(DateFormat.java:366) ~[na:1.8.0_271]
+	at gmcc.hxs.controller.LogController.oplog(LogController.java:54) ~[classes/:na]
+	at gmcc.hxs.controller.LogController$$FastClassBySpringCGLIB$$589ca661.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738) ~[spring-aop-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52) ~[spring-aop-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) ~[spring-aop-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at gmcc.hxs.controller.LogController$$EnhancerBySpringCGLIB$$879a44e1.oplog(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_271]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
+

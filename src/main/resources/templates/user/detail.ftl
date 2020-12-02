@@ -9,9 +9,6 @@
                 <div class="col-md-12 column">
                     <form role="form">
                         <div class="form-group">
-                            <label for="exampleInputEmail1" style="color: blue">用户id：</label><label for="exampleInputEmail1">${userinfo.userId}</label>
-                        </div>
-                        <div class="form-group">
                             <label for="exampleInputEmail1" style="color: blue">用户名：</label><label for="exampleInputEmail1">${userinfo.username}</label>
                         </div>
                         <div class="form-group">
@@ -19,6 +16,9 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1" style="color: blue">手机号码：</label><label for="exampleInputEmail1">${userinfo.tel}</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" style="color: blue">用户姓名：</label><label for="exampleInputEmail1">${userinfo.name}</label>
                         </div>
                     </form>
                 </div>

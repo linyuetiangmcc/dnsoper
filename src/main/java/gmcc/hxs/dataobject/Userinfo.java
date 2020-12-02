@@ -21,4 +21,6 @@ public class Userinfo {
 
     private String tel;
 
+    private String name;
+
 }
